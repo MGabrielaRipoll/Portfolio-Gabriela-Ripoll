@@ -1,0 +1,25 @@
+/* section musica celular */
+@use './variables';
+.musica{
+    background-color: variables.$color_general;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {    
+        color: aliceblue;
+        align-self: center;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 90%;
+    }
+}
+
+    
+/* logo ws celular */
+.ws_logo{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 350px;
+} 

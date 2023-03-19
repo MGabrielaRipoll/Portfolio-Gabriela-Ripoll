@@ -1,0 +1,273 @@
+@use './variables';
+
+@media only screen and (min-width: 768px) {
+    /* logo ws para tablet */
+    .ws_logo{
+        left: 720px;
+    }
+    /* footer para tablet */
+    .redes_footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        list-style: none
+    }
+    /* carrusel para tablet */
+    .carousel-inner{
+        width: 400px;
+        .d-block{
+            width: 300px;
+            height: 300px;
+        }
+        .p_carrusel{
+            background-color: variables.$color_general;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    // main Experiencia Laboral
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; 
+        .flip-card-inner {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+                &:hover{
+                    transform: rotateY(180deg);
+                }
+            .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 300px;
+                height: 200px;
+                -webkit-backface-visibility: hidden; /* Safari */
+                backface-visibility: hidden;
+                img{
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 6px;
+                    border-color: black;
+                }
+            }
+            .flip-card-front {
+                background-color: #bbb;
+                color: black;
+            }
+            .flip-card-back {
+                background-color: variables.$color_general;
+                color: white;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    }        
+
+    @media only screen and (min-width: 1020px) {
+        .contenedor{
+            background-color:black;
+        }
+    /* imagen header */
+        header {
+            background: variables.$color_general;
+            background: linear-gradient(0deg, variables.$color_general 0%, rgba(253,45,168,1) 100%);
+            background-position: initial;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* titulo */
+            h1{
+                font-family: variables.$tipo_de_letra;
+                font-size: 50px;
+                color: aquamarine;
+                text-align: center;
+                font-weight: bold;
+            }
+            .navbar{
+                background-color: transparent !important;
+                .navbar-brand{
+                    font-weight: bold;
+                    font-size: 25px;
+                    &:hover{
+                        color: aqua;
+                    }                         
+                }
+                .navbar-nav{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                }
+            }
+        }
+    /* navegador */
+    
+
+    /* main index */
+        .bienvenida{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            .imagenPersonal {
+                height: 400px;
+                width: 300px;
+                border-radius: 150px;
+                border: 5px solid variables.$color_general;;
+            }
+            article{
+                .presentacion{
+                    color: aliceblue;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 95%;
+                    text-align: justify;
+                    margin: 10px;
+                }
+            }
+        }
+    /* formulario de contacto*/
+        .formularioDContacto{
+            font-size: 20px;
+            color: aqua;
+            font-weight: bold;
+            width: 750px;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            padding-left: 0;
+        }
+    /* mapa */
+        .mapa_contacto{
+            margin:auto;
+        }            
+    /* section musica */
+        .musica{
+            background: variables.$color_general;
+            background: linear-gradient(0deg, variables.$color_general 0%, rgba(253,45,168,1) 100%);
+            height: 200px;
+            align-items:center;
+            padding: 10px;
+            p{
+                color:black;
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+    /* main estudios */
+        .estudios{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            row-gap: 20px;
+            text-align: left;
+            justify-content: space-evenly;
+            .carreras{
+                height: 150px;
+                width: 700px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                text-justify: justify;
+                justify-content: space-around;
+                background-color: variables.$color_general;;
+                .logo_estudios{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 6px;
+                    border-color: black;
+                }
+                p{
+                    color: aquamarine;
+                    font-size: 20px;
+                }
+            }
+        }
+    /* carrusel proyectos */
+        .carousel-inner{
+            width: 500px;
+            .d-block{
+                width: 400px;
+                height: 400px;
+            }
+            .p_carrusel{
+                background-color: variables.$color_general;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                &:hover{
+                    color: aquamarine;
+                }
+            }
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; 
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                    &:hover{
+                        transform: rotateY(180deg);
+                    }
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 6px;
+                        border-color: black;
+                    }
+                }
+                .flip-card-front {
+                    background-color: #bbb;
+                    color: black;
+                }
+                .flip-card-back {
+                    background-color: variables.$color_general;
+                    color: white;
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+        
+        
+    /* footer */
+        .redes_footer{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            list-style: none;
+            padding: 1rem;
+            margin: 0;
+            .logos{
+                width: 70px;
+                height: 70px;
+                border-radius: 6px;
+                border-color: black;
+            }
+        }
+        
+    /* logo ws */
+        .ws_logo{
+            width: 70px;
+            height: 70px;
+            position: fixed;
+            top: 600px;
+            left: 1000px;
+        } 
+    }

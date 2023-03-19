@@ -1,0 +1,114 @@
+/* main index celular */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imagenPersonal {
+        width: 80px;
+        border-radius: 150px;
+        border: 3px solid white;
+        justify-self: center;
+    }
+    article{
+        .presentacion{
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: justify;
+            margin: 5px;
+        }
+    }
+}
+/* estudios celular */
+.estudios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+    text-align: left;
+    justify-content: space-evenly;
+    .carreras{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        text-align: justify;
+        text-justify: center;
+        margin: 5px;
+        background-color: rgb(63, 16, 107);
+        .logo_estudios{
+            width: 50px;
+            height: 50px;
+            border-color: black;
+        }
+        p{
+            color: aquamarine;
+            font-size: 10px;
+        }
+    }
+}
+/* proyectos celular */
+.carousel-inner{
+    width: 300px;
+    .d-block{
+        width: 250px;
+        height: 250px;
+    }
+    .p_carrusel{
+        background-color: blueviolet;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+// main Experiencia Laboral
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    .flip-card-inner {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+            &:hover{
+                transform: rotateY(180deg);
+            }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+            img{
+                width: 300px;
+                height: 200px;
+                border-radius: 6px;
+                border-color: black;
+            }
+        }
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        .flip-card-back {
+            background-color: blueviolet;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    }
+}
+/* formulario de contacto celular */
+.formularioDContacto{
+    font-size: 15px;
+    font-weight: bold;
+    color: aqua;
+    
+}
