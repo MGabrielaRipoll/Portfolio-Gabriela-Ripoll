@@ -197,6 +197,13 @@ main article .presentacion {
     flex-direction: row;
     list-style: none;
   }
+  /* mapa para tablet*/
+  .mapa_contacto {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   /* carrusel para tablet */
   .carousel-inner {
     width: 400px;
@@ -326,7 +333,10 @@ main article .presentacion {
   }
   /* mapa */
   .mapa_contacto {
-    margin: auto;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /* section musica */
   .musica {
