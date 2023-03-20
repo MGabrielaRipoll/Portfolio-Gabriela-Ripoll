@@ -391,6 +391,14 @@ main article .presentacion {
   .carousel-inner .p_carrusel:hover {
     color: aquamarine;
   }
+  .main_exp_lab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    justify-content: space-around;
+    padding: 2%;
+  }
   .flip-card {
     background-color: transparent;
     width: 300px;
