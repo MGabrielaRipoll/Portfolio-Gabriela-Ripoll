@@ -32,6 +32,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 95%;
 }
 main .imagenPersonal {
   width: 80px;
@@ -40,6 +41,7 @@ main .imagenPersonal {
   justify-self: center;
 }
 main article .presentacion {
+  text-indent: 3px;
   color: aliceblue;
   font-weight: bold;
   font-size: 15px;
@@ -55,10 +57,11 @@ main article .presentacion {
   row-gap: 10px;
   text-align: left;
   justify-content: space-evenly;
+  width: 95%;
 }
 .estudios .carreras {
-  width: 100%;
-  height: 50px;
+  width: 95%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   text-align: justify;
@@ -67,8 +70,8 @@ main article .presentacion {
   background-color: rgb(63, 16, 107);
 }
 .estudios .carreras .logo_estudios {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-color: black;
 }
 .estudios .carreras p {
@@ -135,6 +138,7 @@ main article .presentacion {
 
 /* formulario de contacto celular */
 .formularioDContacto {
+  width: 95%;
   font-size: 15px;
   font-weight: bold;
   color: aqua;
@@ -143,6 +147,7 @@ main article .presentacion {
 /* section musica celular */
 .musica {
   background-color: rgb(134, 34, 195);
+  background: linear-gradient(0deg, rgb(134, 34, 195) 0%, rgb(253, 45, 168) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,6 +289,7 @@ main article .presentacion {
   /* navegador */
   /* main index */
   .bienvenida {
+    width: 95%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -295,6 +301,7 @@ main article .presentacion {
     border: 5px solid rgb(134, 34, 195);
   }
   .bienvenida article .presentacion {
+    text-indent: 3px;
     color: aliceblue;
     font-weight: bold;
     font-size: 25px;
@@ -304,6 +311,7 @@ main article .presentacion {
   }
   /* formulario de contacto*/
   .formularioDContacto {
+    width: 95%;
     font-size: 20px;
     color: aqua;
     font-weight: bold;
@@ -332,6 +340,7 @@ main article .presentacion {
   }
   /* main estudios */
   .estudios {
+    width: 95%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -422,22 +431,25 @@ main article .presentacion {
     justify-content: space-around;
     flex-direction: row;
     list-style: none;
-    padding: 1rem;
-    margin: 0;
   }
   .redes_footer .logos {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
     border-color: black;
   }
   /* logo ws */
-  .ws_logo {
+  .div_ws {
+    overflow: hidden;
     width: 70px;
     height: 70px;
     position: fixed;
-    top: 600px;
-    left: 1000px;
+    top: 100px;
+    right: 50px;
+  }
+  .div_ws .ws_logo {
+    width: 100%;
+    height: 100%;
   }
 }
 
