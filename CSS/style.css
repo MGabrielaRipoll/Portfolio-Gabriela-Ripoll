@@ -441,8 +441,8 @@ main article .presentacion {
   /* logo ws */
   .div_ws {
     overflow: hidden;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: fixed;
     top: 100px;
     right: 50px;
