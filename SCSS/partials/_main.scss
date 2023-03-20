@@ -1,4 +1,5 @@
 /* main index celular */
+@use './variables';
 main{
     display: flex;
     flex-direction: column;
@@ -7,7 +8,7 @@ main{
     .imagenPersonal {
         width: 80px;
         border-radius: 150px;
-        border: 3px solid white;
+        border: 3px solid variables.$color_general;
         justify-self: center;
     }
     article{
@@ -47,6 +48,8 @@ main{
         p{
             color: aquamarine;
             font-size: 10px;
+            font-weight: bold;
+            margin: 1%;
         }
     }
 }
