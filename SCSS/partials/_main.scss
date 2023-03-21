@@ -32,17 +32,19 @@ main{
     justify-content: space-evenly;
     width: 95%;
     .carreras{
+        padding: 3%;
         width: 95%;
-        height: 60px;
+        height: 70px;
         display: flex;
+        align-items: center;
         flex-direction: row;
         text-align: justify;
         text-justify: center;
         margin: 5px;
         background-color: rgb(63, 16, 107);
         .logo_estudios{
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             border-color: black;
         }
         p{
@@ -55,6 +57,7 @@ main{
 }
 /* proyectos celular */
 .carousel-inner{
+    padding: 2%;
     width: 300px;
     .d-block{
         width: 250px;
@@ -71,7 +74,13 @@ main{
 
 
 // main Experiencia Laboral
+.main_exp_lab{
+    width: 95%;
+    padding: 2%;
+    margin: 2%;
+}
 .flip-card {
+    margin: 2%;
     background-color: transparent;
     width: 300px;
     height: 200px;
