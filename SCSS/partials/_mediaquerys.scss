@@ -19,21 +19,6 @@
         align-items: center;
         justify-content: center;
     }  
-    /* carrusel para tablet */
-    .carousel-inner{
-        width: 400px;
-        .d-block{
-            width: 300px;
-            height: 300px;
-        }
-        .p_carrusel{
-            background-color: variables.$color_general;
-            font-size: 15px;
-            color: black;
-            font-weight: bold;
-            text-align: center;
-        }
-    }
     // main Experiencia Laboral
     .flip-card {
         margin: 5px;
@@ -201,24 +186,6 @@
                     font-size: 20px;
                     font-weight: bold;
                     margin: 2%;
-                }
-            }
-        }
-    /* carrusel proyectos */
-        .carousel-inner{
-            margin: 5%;
-            width: 500px;
-            .d-block{
-                width: 400px;
-                height: 400px;
-            }
-            .p_carrusel{
-                background-color: variables.$color_general;
-                font-size: 30px;
-                font-weight: bold;
-                text-align: center;
-                &:hover{
-                    color: aquamarine;
                 }
             }
         }

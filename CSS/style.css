@@ -19,16 +19,18 @@ header h1 {
   font-size: 30px;
   text-align: center;
 }
-header .navbar {
-  background-color: transparent;
+header nav {
+  background-color: rgb(134, 34, 195);
+  background: linear-gradient(0deg, rgb(134, 34, 195) 0%, rgb(253, 45, 168) 100%);
 }
-header .navbar .navbar-brand {
+header nav .navbar-brand {
   font-size: 20px;
   font-weight: bold;
 }
 
 /* main index celular */
 main {
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +43,7 @@ main .imagenPersonal {
   justify-self: center;
 }
 main article .presentacion {
+  padding: 5px;
   text-indent: 3px;
   color: aliceblue;
   font-weight: bold;
@@ -68,6 +71,7 @@ main article .presentacion {
   flex-direction: row;
   text-align: justify;
   text-justify: center;
+  padding: 5px;
   margin: 5px;
   background-color: rgb(63, 16, 107);
 }
@@ -80,24 +84,15 @@ main article .presentacion {
   color: aquamarine;
   font-size: 10px;
   font-weight: bold;
-  margin: 1%;
+  margin: 5px;
+  padding: 5px;
 }
 
 /* proyectos celular */
-.carousel-inner {
-  padding: 2%;
-  width: 300px;
-}
-.carousel-inner .d-block {
-  width: 250px;
-  height: 250px;
-}
-.carousel-inner .p_carrusel {
-  background-color: blueviolet;
-  font-size: 15px;
-  color: black;
-  font-weight: bold;
-  text-align: center;
+.accordion {
+  width: 90%;
+  margin: 10px;
+  position: relative;
 }
 
 .main_exp_lab {
@@ -181,6 +176,13 @@ main article .presentacion {
   left: 20px;
 }
 
+.mapa_contacto {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .redes_footer {
   list-style: none;
   display: flex;
@@ -213,21 +215,6 @@ main article .presentacion {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  /* carrusel para tablet */
-  .carousel-inner {
-    width: 400px;
-  }
-  .carousel-inner .d-block {
-    width: 300px;
-    height: 300px;
-  }
-  .carousel-inner .p_carrusel {
-    background-color: rgb(134, 34, 195);
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
   }
   .flip-card {
     margin: 5px;
@@ -392,24 +379,6 @@ main article .presentacion {
     font-size: 20px;
     font-weight: bold;
     margin: 2%;
-  }
-  /* carrusel proyectos */
-  .carousel-inner {
-    margin: 5%;
-    width: 500px;
-  }
-  .carousel-inner .d-block {
-    width: 400px;
-    height: 400px;
-  }
-  .carousel-inner .p_carrusel {
-    background-color: rgb(134, 34, 195);
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .carousel-inner .p_carrusel:hover {
-    color: aquamarine;
   }
   .main_exp_lab {
     display: flex;

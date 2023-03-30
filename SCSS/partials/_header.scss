@@ -10,8 +10,9 @@ header {
         font-size: 30px;
         text-align: center;
     }
-    .navbar{
-        background-color: transparent;
+    nav{
+        background-color: variables.$color_general;
+        background: linear-gradient(0deg, variables.$color_general 0%, rgba(253,45,168,1) 100%);
         .navbar-brand{
             font-size: 20px;
             font-weight: bold;
