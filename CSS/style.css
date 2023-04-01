@@ -69,9 +69,13 @@ header nav .navbar-brand {
   padding: 15px;
   margin: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.carousel-inner img {
+.carousel-inner .carousel-item {
+  margin: 0;
+}
+.carousel-inner .carousel-item img {
   width: 300px;
   height: 200px;
 }
@@ -113,10 +117,19 @@ header nav .navbar-brand {
 }
 
 /* proyectos celular */
-.accordion {
+.main_proyectos {
+  background-color: black;
+}
+.main_proyectos .accordion {
+  padding: 15px;
+  margin: 15px;
   width: 90%;
-  margin: 10px;
   position: relative;
+}
+.main_proyectos .accordion button {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .main_exp_lab {
@@ -174,6 +187,12 @@ header nav .navbar-brand {
   font-weight: bold;
   color: aqua;
 }
+.formularioDContacto button {
+  background-color: aqua;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
 
 /* section musica celular */
 .musica {
@@ -193,6 +212,7 @@ header nav .navbar-brand {
 
 /* logo ws celular */
 .ws_logo {
+  z-index: initial;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -236,6 +256,52 @@ header nav .navbar-brand {
   }
   .main_contacto {
     padding: 50px;
+  }
+  .hobbies {
+    padding: 5px;
+    text-indent: 3px;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+    margin: 5px;
+  }
+  .carousel-inner {
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .carousel-inner .carousel-item {
+    margin: 0;
+    justify-items: center;
+  }
+  .carousel-inner .carousel-item img {
+    width: 600px;
+    height: 400px;
+  }
+  .carousel-inner .carousel-item .d-none {
+    background-color: aquamarine;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .carousel-inner .carousel-item .d-none h5 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  .carousel-inner .carousel-item .d-none p {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
   }
   /* mapa para tablet*/
   .mapa_contacto {
@@ -374,17 +440,19 @@ header nav .navbar-brand {
     padding: 15px;
     margin: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
   }
-  .carousel-inner img {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .carousel-inner .carousel-item {
+    margin: 0;
+    justify-items: center;
+  }
+  .carousel-inner .carousel-item img {
     width: 600px;
     height: 400px;
   }
-  .carousel-inner .d-none {
+  .carousel-inner .carousel-item .d-none {
     background-color: aquamarine;
     height: 70px;
     display: flex;
@@ -393,12 +461,12 @@ header nav .navbar-brand {
     justify-content: center;
     padding: 0;
   }
-  .carousel-inner .d-none h5 {
+  .carousel-inner .carousel-item .d-none h5 {
     font-size: 25px;
     color: black;
     font-weight: bold;
   }
-  .carousel-inner .d-none p {
+  .carousel-inner .carousel-item .d-none p {
     font-size: 15px;
     color: black;
     font-weight: bold;
@@ -418,6 +486,12 @@ header nav .navbar-brand {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .main_contacto .formularioDContacto button {
+    background-color: aqua;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
   }
   /* mapa */
   .mapa_contacto {
@@ -546,6 +620,7 @@ header nav .navbar-brand {
   }
   /* logo ws */
   .ws_logo {
+    z-index: initial;
     width: 70px;
     height: 70px;
     position: fixed;

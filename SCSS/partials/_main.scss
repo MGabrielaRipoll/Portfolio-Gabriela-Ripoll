@@ -42,10 +42,14 @@
     padding: 15px;
     margin: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    img{
-        width: 300px;
-        height: 200px;
+    .carousel-item{
+        margin: 0;
+        img{
+            width: 300px;
+            height: 200px;
+        }
     }
 }
 /* estudios celular */
@@ -84,10 +88,19 @@
     }
 }
 /* proyectos celular */
-.accordion{
-    width: 90%;
-    margin: 10px;
-    position:relative;
+.main_proyectos{
+    background-color: black;
+    .accordion{
+        padding: 15px;
+        margin: 15px;
+        width: 90%;
+        position:relative;
+        button{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
 }
 
 
@@ -144,5 +157,10 @@
     font-size: 15px;
     font-weight: bold;
     color: aqua;
-    
+    button{
+        background-color: aqua;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-weight: bold;
+    }   
 }
