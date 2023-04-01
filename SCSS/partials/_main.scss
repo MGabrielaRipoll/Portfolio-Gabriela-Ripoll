@@ -1,10 +1,11 @@
 /* main index celular */
 @use './variables';
-main{
+.divInicio{
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 95%;
     .imagenPersonal {
         width: 80px;
@@ -22,6 +23,29 @@ main{
             text-align: justify;
             margin: 5px;
         }
+    }
+}
+
+
+.hobbies{
+    padding: 5px;
+    text-indent: 3px;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: justify;
+    margin: 5px;
+}
+.carousel-inner{
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 300px;
+        height: 200px;
     }
 }
 /* estudios celular */

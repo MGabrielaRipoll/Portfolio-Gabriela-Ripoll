@@ -29,20 +29,21 @@ header nav .navbar-brand {
 }
 
 /* main index celular */
-main {
+.divInicio {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 95%;
 }
-main .imagenPersonal {
+.divInicio .imagenPersonal {
   width: 80px;
   border-radius: 150px;
   border: 3px solid rgb(134, 34, 195);
   justify-self: center;
 }
-main article .presentacion {
+.divInicio article .presentacion {
   padding: 5px;
   text-indent: 3px;
   color: aliceblue;
@@ -50,6 +51,29 @@ main article .presentacion {
   font-size: 15px;
   text-align: justify;
   margin: 5px;
+}
+
+.hobbies {
+  padding: 5px;
+  text-indent: 3px;
+  color: aquamarine;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: justify;
+  margin: 5px;
+}
+
+.carousel-inner {
+  width: 300px;
+  height: 200px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+.carousel-inner img {
+  width: 300px;
+  height: 200px;
 }
 
 /* estudios celular */
@@ -188,6 +212,7 @@ main article .presentacion {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: black;
 }
 .redes_footer .logos {
   width: 50px;
@@ -208,6 +233,9 @@ main article .presentacion {
     justify-content: space-around;
     flex-direction: row;
     list-style: none;
+  }
+  .main_contacto {
+    padding: 50px;
   }
   /* mapa para tablet*/
   .mapa_contacto {
@@ -257,6 +285,18 @@ main article .presentacion {
     color: white;
     transform: rotateY(180deg);
   }
+  .main_proyectos {
+    background-color: black;
+  }
+  .main_proyectos .accordion {
+    padding: 50px;
+    margin: 50px;
+  }
+  .main_proyectos .accordion button {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
 }
 @media only screen and (min-width: 1020px) {
   .contenedor {
@@ -277,9 +317,12 @@ main article .presentacion {
     color: aquamarine;
     text-align: center;
     font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.5s ease;
   }
   header .navbar {
-    background-color: transparent !important;
+    background: rgb(134, 34, 195);
+    background: linear-gradient(0deg, rgb(134, 34, 195) 0%, rgb(253, 45, 168) 100%);
   }
   header .navbar .navbar-brand {
     font-weight: bold;
@@ -295,19 +338,19 @@ main article .presentacion {
   }
   /* navegador */
   /* main index */
-  .bienvenida {
+  .divInicio {
     width: 95%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
-  .bienvenida .imagenPersonal {
+  .divInicio .imagenPersonal {
     height: 400px;
     width: 300px;
     border-radius: 150px;
     border: 5px solid rgb(134, 34, 195);
   }
-  .bienvenida article .presentacion {
+  .divInicio article .presentacion {
     text-indent: 3px;
     color: aliceblue;
     font-weight: bold;
@@ -316,17 +359,65 @@ main article .presentacion {
     text-align: justify;
     margin: 10px;
   }
+  .hobbies {
+    padding: 5px;
+    text-indent: 3px;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+    margin: 5px;
+  }
+  .carousel-inner {
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .carousel-inner img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    height: 400px;
+  }
+  .carousel-inner .d-none {
+    background-color: aquamarine;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .carousel-inner .d-none h5 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  .carousel-inner .d-none p {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+  }
   /* formulario de contacto*/
-  .formularioDContacto {
+  .main_contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_contacto .formularioDContacto {
     width: 95%;
     font-size: 20px;
     color: aqua;
     font-weight: bold;
     width: 750px;
     display: flex;
-    align-items: left;
-    justify-content: left;
-    padding-left: 0;
+    align-items: center;
+    justify-content: center;
   }
   /* mapa */
   .mapa_contacto {
@@ -357,6 +448,7 @@ main article .presentacion {
     flex-wrap: nowrap;
     row-gap: 20px;
     text-align: left;
+    align-items: center;
     justify-content: space-evenly;
   }
   .estudios .carreras {
@@ -426,6 +518,18 @@ main article .presentacion {
     background-color: rgb(134, 34, 195);
     color: white;
     transform: rotateY(180deg);
+  }
+  .main_proyectos {
+    background-color: black;
+  }
+  .main_proyectos .accordion {
+    padding: 50px;
+    margin: 50px;
+  }
+  .main_proyectos .accordion button {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
   }
   /* footer */
   .redes_footer {
