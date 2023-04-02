@@ -270,17 +270,19 @@ header nav .navbar-brand {
     width: 600px;
     height: 400px;
     padding: 15px;
-    margin: 15px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
   }
   .carousel-inner .carousel-item {
-    margin: 0;
+    margin: auto;
+    width: 100%;
     justify-items: center;
   }
   .carousel-inner .carousel-item img {
+    margin: 0;
     width: 600px;
     height: 400px;
   }
@@ -364,7 +366,7 @@ header nav .navbar-brand {
     font-weight: bold;
   }
 }
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 1024px) {
   .contenedor {
     background-color: black;
   }
@@ -438,7 +440,7 @@ header nav .navbar-brand {
     width: 600px;
     height: 400px;
     padding: 15px;
-    margin: 15px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,11 +448,11 @@ header nav .navbar-brand {
   }
   .carousel-inner .carousel-item {
     margin: auto;
-    width: 80%;
+    width: 100%;
     justify-items: center;
   }
   .carousel-inner .carousel-item img {
-    margin: auto;
+    margin: 0;
     width: 600px;
     height: 400px;
   }

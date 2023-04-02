@@ -30,15 +30,17 @@
         width: 600px;
         height: 400px;
         padding: 15px;
-        margin: 15px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
         .carousel-item{
-            margin: 0;
+            margin: auto;
+            width: 100%;
             justify-items: center;
             img{
+                margin: 0;
                 width: 600px;
                 height: 400px;
             }
@@ -127,7 +129,7 @@
     }
 }        
 
-    @media only screen and (min-width: 1020px) {
+    @media only screen and (min-width: 1024px) {
         .contenedor{
             background-color:black;
         }
@@ -205,17 +207,17 @@
             width: 600px;
             height: 400px;
             padding: 15px;
-            margin: 15px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-items: center;
             .carousel-item{
                 margin: auto;
-                width: 80%;
+                width: 100%;
                 justify-items: center;
                 img{
-                    margin: auto;
+                    margin: 0;
                     width: 600px;
                     height: 400px;
                 }
