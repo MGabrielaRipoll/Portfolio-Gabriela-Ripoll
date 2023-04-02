@@ -211,9 +211,11 @@
             align-items: center;
             justify-items: center;
             .carousel-item{
-                margin: 0;
+                margin: auto;
+                width: 80%;
                 justify-items: center;
                 img{
+                    margin: auto;
                     width: 600px;
                     height: 400px;
                 }

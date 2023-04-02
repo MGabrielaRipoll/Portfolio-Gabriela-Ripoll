@@ -445,10 +445,12 @@ header nav .navbar-brand {
     justify-items: center;
   }
   .carousel-inner .carousel-item {
-    margin: 0;
+    margin: auto;
+    width: 80%;
     justify-items: center;
   }
   .carousel-inner .carousel-item img {
+    margin: auto;
     width: 600px;
     height: 400px;
   }
